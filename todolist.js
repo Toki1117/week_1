@@ -142,8 +142,8 @@ document.querySelector('#search').addEventListener('keyup', function(e) {
   }
 
   let result = tasks.filter(isName);
-  console.log(result);
-  debugger;
+  //console.log(result);
+  //debugger;
   GenerateTable();
 });
 
