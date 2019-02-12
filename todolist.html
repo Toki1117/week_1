@@ -1,0 +1,102 @@
+<!DOCTYTE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div><h1>This is a to do list</h1></div>
+      <form id="dolist_form">
+        <div class="form-group">
+          <label for="Id">Id :</label>
+          <input class="form-control" type="text" name="Id" id="Id" readonly />
+        </div>
+        <div class="form-group">
+          <label for="Tarea">Name :</label>
+          <input
+            class="form-control"
+            type="text"
+            name="Name"
+            id="Tarea"
+            max="100"
+          />
+        </div>
+        <div class="form-group">
+          <label for="assignee">Assignee :</label>
+          <div class="caja-select">
+            <select class="form-control" id="Assignee">
+              <option value="Jhon">Jhon</option>
+              <option value="Alice">Alice</option>
+              <option value="Frank">Frank</option>
+              <option value="Mary">Mary</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label>Status : </label>
+
+          <input
+            type="checkbox"
+            id="cbDone"
+            value="Done"
+            class="checkbox checkboxbtn"
+          /><label for="cbDone">Done</label>
+        </div>
+
+        <button class="btn btn-primary" type="submit" id="btnCreate">
+          Create task
+        </button>
+      </form>
+      <div class="content">
+        <h4>Search by</h4>
+        <input type="text" id="search" placeholder="Name" />
+      </div>
+      <div class="to-page">
+        <a href="bonus_calculator.html"
+          ><i class="fa fa-calculator fa-sm"></i> Bonus calculator
+          <i class="fa fa-calculator fa-sm"></i
+        ></a>
+      </div>
+      <div id="table-container">
+        <table id="tasks-table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Assignee</th>
+              <th>Status</th>
+              <th>Created date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./todolist.js"></script>
+  </body>
+</html>

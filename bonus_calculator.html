@@ -1,0 +1,58 @@
+<!DOCTYTE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-form">
+        <h1>Bonus calculator <i class="fa fa-calculator"></i></h1>
+      </div>
+
+      <form class="form">
+        <div class="info-form"><h3>Please enter your information.</h3></div>
+        <div class="form-group">
+          <label for="salary">Salary</label>
+          <input type="number" id="salary" name="salary" />
+        </div>
+        <div class="form-group">
+          <label for="years">Years</label>
+          <input type="number" id="years" name="years" />
+        </div>
+        <div class="form-group">
+          <label for="days">Days</label>
+          <input type="number" id="days" name="days" />
+        </div>
+
+        <button class="btn" type="submit" id="btnCalcular">
+          Calculate
+        </button>
+      </form>
+      <div id="bonus-container"></div>
+      <div class="to-page">
+        <a href="todolist.html"
+          ><i class="fa fa-list fa-sm"></i> To do list here
+          <i class="fa fa-list fa-sm"></i>
+        </a>
+      </div>
+    </div>
+    <script src="bonuscalculator.js"></script>
+  </body>
+</html>
